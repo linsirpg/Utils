@@ -7,7 +7,7 @@
   
   c.具体使用
  
-
+4. `v-model`绑定数据
     ```html
     <vue-ueditor-wrap v-model="msg"></vue-ueditor-wrap>
     ```
