@@ -7,7 +7,8 @@
   
   
  
-3.`v-model`具体使用
+4. `v-model`具体使用
+
     ```html
     <vue-ueditor-wrap v-model="msg"></vue-ueditor-wrap>
     ```
@@ -18,4 +19,5 @@
 	      msg: '<h2><img src="http://img.baidu.com/hi/jx2/j_0003.gif"/>Vue + UEditor + v-model双向绑定</h2>'
 	    }
 	  },
+	```
 	```
