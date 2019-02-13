@@ -6,18 +6,7 @@
   b. 引入js文件夹下面的 index.js文件
   
   c.具体使用
-  
-
-	```js
-	  components: {
-	    VueUeditorWrap
-	  },
-
-	// 或者在 main.js 里将它注册为全局组件
-	Vue.component('vue-ueditor-wrap', VueUeditorWrap)
-	```
-
-4. `v-model`绑定数据
+ 
 
     ```html
     <vue-ueditor-wrap v-model="msg"></vue-ueditor-wrap>
