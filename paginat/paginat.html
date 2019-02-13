@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>分页器</title>
+    <link rel="stylesheet" type="text/css" href="./css/iconfont.css">
+    <link rel="stylesheet" type="text/css" href="./css/paginat.css">
+</head>
+
+<body>
+    <div id='PagingDevice' background='#409eff'>
+    </div>
+    <div style='text-align: center;margin-top: 200px;' id='PagingDevic1e' background='#409eff'>
+    </div>
+</body>
+
+</html>
+<script src='./js/index.js'></script>
+<script>
+    var pageNo = 1;
+    var pageSize = 20;
+
+    function aaa() {
+        var aa = new Paginat({
+            target: 'PagingDevice',
+            dataTotal: 5000,
+            pageAmountList: [10, 20, 30, 40, 50],
+            curPage: pageNo,
+            pageSize: '9',
+            pageAmount: pageSize,
+            getPage: function (index) {
+                console.log(index)
+                pageNo = index
+                aaa()
+            },
+            getPageAmount: function (index) {
+                console.log(index)
+                pageSize = index;
+                pageNo = 1
+                aaa()
+            }
+        })
+    }
+    aaa()
+
+
+    console.log()
+    var pageNo1 = 1;
+    var pageSize1 = 20;
+
+    function aaa1() {
+        var aa = new Paginat({
+            target: 'PagingDevic1e',
+            dataTotal: 500,
+            pageAmountList: [10, 20, 30, 40, 50],
+            curPage: pageNo1,
+            pageSize: '7',
+            pageAmount: pageSize1,
+            getPage: function (index) {
+                console.log(index)
+                pageNo1 = index
+                aaa1()
+            },
+            getPageAmount: function (index) {
+                console.log(index)
+                pageSize1 = index;
+                pageNo1 = 1
+                aaa1()
+            }
+        })
+    }
+    aaa1()
+</script>
