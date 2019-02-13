@@ -15,22 +15,17 @@
 
 	```js
 	 new Paginat({
-            target: 'PagingDevice',
-            dataTotal: 5000,
-            pageAmountList: [10, 20, 30, 40, 50],
-            curPage: pageNo,
-            pageSize: '9',
-            pageAmount: pageSize,
+            target: 'Pagings', // 作用对象 通过id绑定（仅支持id）
+            dataTotal: 5000,   // 数据总条数
+            pageAmountList: [10, 20, 30, 40, 50], // 每页条数列表
+            curPage: pageNo, //当前页
+            pageSize: '7', 
+            pageAmount: pageSize, //每页多少条
             getPage: function (index) {
-                console.log(index)
-                pageNo = index
-                aaa()
+		//返回当前的页码
             },
             getPageAmount: function (index) {
-                console.log(index)
-                pageSize = index;
-                pageNo = 1
-                aaa()
+               返回当前每页的条数
             }
         })
 	```
