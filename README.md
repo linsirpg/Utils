@@ -5,9 +5,9 @@
   
   b. 引入js文件夹下面的 index.js文件
   
-  c.具体使用
+  
  
-4. `v-model`绑定数据
+c. `v-model`具体使用
     ```html
     <vue-ueditor-wrap v-model="msg"></vue-ueditor-wrap>
     ```
