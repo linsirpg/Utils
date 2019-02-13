@@ -10,15 +10,28 @@
 4. `v-model`具体使用
 
     ```html
-     <div id='PagingDevice' background='#409eff'>
-    </div>
+     <div id='Pagings'></div>
     ```
 
 	```js
-	  data () {
-	    return {
-	      msg: '<h2><img src="http://img.baidu.com/hi/jx2/j_0003.gif"/>Vue + UEditor + v-model双向绑定</h2>'
-	    }
-	  },
+	 new Paginat({
+            target: 'PagingDevice',
+            dataTotal: 5000,
+            pageAmountList: [10, 20, 30, 40, 50],
+            curPage: pageNo,
+            pageSize: '9',
+            pageAmount: pageSize,
+            getPage: function (index) {
+                console.log(index)
+                pageNo = index
+                aaa()
+            },
+            getPageAmount: function (index) {
+                console.log(index)
+                pageSize = index;
+                pageNo = 1
+                aaa()
+            }
+        })
 	```
 
