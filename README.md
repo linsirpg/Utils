@@ -10,7 +10,8 @@
 4. `v-model`具体使用
 
     ```html
-    <vue-ueditor-wrap v-model="msg"></vue-ueditor-wrap>
+     <div id='PagingDevice' background='#409eff'>
+    </div>
     ```
 
 	```js
